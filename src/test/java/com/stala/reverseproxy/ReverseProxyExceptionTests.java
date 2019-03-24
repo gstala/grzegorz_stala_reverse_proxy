@@ -33,6 +33,6 @@ public class ReverseProxyExceptionTests {
 
     @Test
     public void handleResourceAccessExceptionTest() throws Exception {
-        this.mvc.perform(put("http://localhot:8080/")).andExpect(status().isNotFound());
+        this.mvc.perform(put("/test")).andExpect(status().isNotFound());
     }
 }
